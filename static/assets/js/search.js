@@ -1,6 +1,6 @@
 import { createViewPage, isValidURL } from './utils.js';
 
-const load = () => {
+const load = async () => {
     const form = document.querySelector('#wpf');
     const query = document.querySelector('#query');
 
