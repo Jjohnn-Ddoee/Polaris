@@ -122,6 +122,7 @@ if (window.self === window.top && location.pathname !== '/view') setTimeout(asyn
     if (location.pathname === '/games') Games.load();
     if (location.pathname === '/apps') Apps.load();
     if (location.pathname === '/search') Search.load();
+    if (location.pathname === '/') Search.load();
     if (location.pathname === '/cheats') Cheats.load();
 }, 500);
 
@@ -209,10 +210,9 @@ if (location.pathname === '/') {
                     description.textContent = change.simpleDescription;
                     description.classList = 'small';
                     log.appendChild(description);
-
                 });
 
-            const updateChangelog = (amount = 3) => {
+            const resizeChangelog = (amount = 3) => {
                 amount = amount - 1;
 
                 for (let i = 0; i < document.querySelector('#changelog').children.length; i++) {
@@ -221,8 +221,8 @@ if (location.pathname === '/') {
                 }
             }
 
-            updateChangelog(Math.floor(getAvalibleHeight() / logHeight()));
-            window.addEventListener('resize', () => updateChangelog(Math.floor(getAvalibleHeight() / logHeight())));
+            resizeChangelog(Math.floor(getAvalibleHeight() / logHeight()));
+            window.addEventListener('resize', () => resizeChangelog(Math.floor(getAvalibleHeight() / logHeight())));
         });
 }
 

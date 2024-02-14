@@ -162,12 +162,12 @@
   },
   {
     "name": "COD Mobile",
-    "target": "https://now.gg/play/activision-publishing-inc/7935/call-of-duty.html",
+    "target": "https://now.gg/play/activision-publishing-inc/7935/call-of-duty.html", 
     "image": "https://static.wikia.nocookie.net/callofduty/images/f/f4/App_Icon_CODM_Global.jpg/revision/latest?cb=20200507033012",
     "popular": true
   },
   {
-    "name": "[CSGO] Counter Strike",
+    "name": "Counter Strike",
     "target": "https://play-cs.com",
     "image": "https://cdn2.iconfinder.com/data/icons/popular-games-1/50/csgo_squircle-512.png"
   },
@@ -249,7 +249,7 @@
   },
   {
     "name": "Fruit Ninja",
-    "target": "/cdn/fruit-ninja/index.html",
+    "target": "/cdn/3kh0/fruitninja/index.html",
     "image": "/cdn/fruit-ninja/FruitNinjaTeaser.jpg"
   },
   {
@@ -492,9 +492,14 @@
   },
   {
     "name": "Stumble Guys",
-    "target": "https://now.gg/play/kitka-games/7999/stumble-guys.html",
+    "target": "https://www.stumbleguys.com/play",
     "image": "https://play-lh.googleusercontent.com/Oci7f4WR0JShbn-n5hnwubbXaMssleb2b1Dv7AMOzFFcgstIdC9kg-E3LHx3em8RCaLf",
     "popular":true
+  },
+  {
+    "name": "Stumble Guys",
+    "target": "https://www.stumbleguys.com/play",
+    "image": "https://now.gg/iframe/snippet?app_pkg=com.kitkagames.fallbuddies&partner=skool"
   },
   {
     "name": "Subway Surfers",
@@ -585,5 +590,130 @@
     "name": "Funny Shooter 2",
     "target": "https://rawcdn.githack.com/nightrose-labs/quartz/master/1/6af3cc65-32f9-4f3d-a66c-6c8882a7c5df/index.html",
     "image": "https://raw.githubusercontent.com/nightrose-labs/quartz/master/thumb/6af3cc65-32f9-4f3d-a66c-6c8882a7c5df.jpg"
+  },
+  {
+    "name": "Amongus",
+    "target": "/cdn/3kh0/among-us/index.html",
+    "image": "https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec"
+  },
+  {
+    "name": "Taming.io",
+    "target": "https://taming.io",
+    "image": "https://play-lh.googleusercontent.com/EoY1Ey67rMjTHXIUqZCL3m4Ad4Of8BQr7tUHIcHWkM4YEiMugylaTPBNPAZQ6J8jumI=w240-h480-rw"
+  },
+  {
+    "name": "Rooftop Snipers",
+    "target": "/cdn/3kh0/rooftop-snipers/index.html",
+    "image": "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/c127771edb0e821e4109b7058ae3f094.jpeg"
+  },
+  {
+    "name": "Google Snake",
+    "target": "/cdn/3kh0/google-snake/index.html",
+    "image": "https://play-lh.googleusercontent.com/p19u9SINIT3SZUQ8NcdcX5ROSFeEgTBc8J2okk8TsqSz2cq6eFJ0ekT-TwwqEXAKrQ"
+  },
+  {
+    "name": "Hextris",
+    "target": "/cdn/3kh0/hextris/index.html",
+    "image": "https://codeberg.org/derpman/echo/raw/branch/main/hextris/images/hextris-logo.png"
+  },
+  {
+    "name": "HexGL",
+    "target": "/cdn/3kh0/HexGL/index.html",
+    "image": "https://codeberg.org/derpman/echo/raw/branch/main/HexGL/icon.png"
+  },
+  {
+    "name": "Appel",
+    "target": "/cdn/appel/index.html",
+    "image": "https://store-images.s-microsoft.com/image/apps.14476.13631454430641262.37c87ec2-8482-46a7-a63a-261257b0eba0.238f1630-e1a2-4cdc-ab31-ae80905aacb4?mode=scale&q=90&h=300&w=300"
+  },
+  {
+    "name": "Temple Run 2",
+    "target": "/cdn/3kh0/temple-run-2/index.html",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/98/Temple_Run_2.png"
+  },
+  {
+    "name": "Stack Bump 3D",
+    "target": "/cdn/3kh0/stack-bump-3d/index.html",
+    "image": "/cdn/3kh0/stack-bump-3d/thumbnail.jpg"
+  },
+  {
+    "name": "Stack",
+    "target": "/cdn/3kh0/stack/index.html",
+    "image": "/cdn/3kh0/stack/stack.png"
+  },
+  {
+    "name": "Death Run 3D",
+    "target": "/cdn/3kh0/death-run-3d/index.html",
+    "image": "/cdn/3kh0/death-run-3d/img/death.png"
+  },
+  {
+    "name": "Cut the Rope Time Travel",
+    "target": "/cdn/3kh0/ctr-tr/index.html",
+    "image": "/cdn/3kh0/ctr-tr/logo.png"
+  },
+  {
+    "name": "Cut the Rope Holiday",
+    "target": "/cdn/3kh0/ctr-holiday/index.html",
+    "image": "/cdn/3kh0/ctr-holiday/Holiday_Gift.webp"
+  },
+  {
+    "name": "Ducklife 3",
+    "target": "/cdn/3kh0/ducklife3/index.html",
+    "image": "/cdn/3kh0/ducklife3/duck.png"
+  },
+  {
+    "name": "Ducklife 4",
+    "target": "/cdn/3kh0/ducklife4/index.html",
+    "image": "/cdn/3kh0/ducklife4/splash.jpg"
+  },
+  {
+    "name": "Om-Nom Bounce",
+    "target": "/cdn/3kh0/om-bounce/index.html",
+    "image": "/cdn/3kh0/om-bounce/assets/icon.jpeg"
+  },
+  {
+    "name": "Stickman Hook",
+    "target": "/cdn/3kh0/stickman-hook/index.html",
+    "image": "/cdn/3kh0/stickman-hook/unnamed.jpg"
+  },
+  {
+    "name": "Slither.io",
+    "target": "https://slither.io",
+    "image": "https://play-lh.googleusercontent.com/oObkhKfUXOY5yzheKe9w1Y1pXZBgdiSksMeNmT0BijoQ8J75maTCIW2TA7-6pA6EMA"
+  },
+  {
+    "name": "Evowars.io",
+    "target": "https://evowars.io",
+    "image": "https://play-lh.googleusercontent.com/8MffWSh6-Onwm--Hb5r7UUi21c7MxurIFIrNbBfIPHbb6KIcthHB2PUKcch6L0dO7HA"
+  },
+  {
+    "name": "Deepest Sword",
+    "target": "https://html-classic.itch.zone/html/4017918/index.html",
+    "image": "https://images.sftcdn.net/images/t_app-icon-m/p/f97701fd-a064-4cac-9247-9793e72d8220/2271577798/deepest-sword-logo"
+  },
+  {
+    "name": "Tunnel Rush Mania",
+    "target": "https://html5.gamemonetize.co/2fp4sd31llh6u6vjxe1wxbx8meapsgop/",
+    "image": "https://play-lh.googleusercontent.com/tl2qr3PCg-vpzloUgjMAY9eXz9y58Gdmb77_d9RbmrWoQu8rIvj4Fn3eCurqBoWsY84"
+  },
+  {
+    "name": "Bacon May Die",
+    "target": "https://game.enjoy4fun.com/baconmaydie/v2/index.html",
+    "image": "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/0b3b5b2de68b3a604693bf23b3994aa7.png"
+  },
+  {
+    "name": "Google Feud",
+    "target": "/cdn/3kh0/google-feud/index.html",
+    "image": "/cdn/3kh0/google-feud/splash.png"
+  },
+  {
+    "name": "Eggy Car",
+    "target": "https://webglmath.github.io/eggy-car/",
+    "image": "https://eggy-car.github.io/img/hero/hero.jpg"
+  },
+  {
+    "name": "Cookie Clicker",
+    "target": "https://orteil.dashnet.org/cookieclicker/",
+    "image": "https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok"
   }
 ]
