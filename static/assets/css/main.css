@@ -87,12 +87,71 @@ body::-webkit-scrollbar-corner {
     display: none;
 }
 
-#searchInput {
+.search {
     margin-bottom: 20px;
-    width: 40vh;
-    height: 7vh;
-    border-radius: 2vh;
-    font-size: 3vh;
+    display: flex;
+    
+
+    input {
+        width: 40vh;
+        height: 7.5vh;
+        border-radius: 2vh;
+        font-size: 3vh;
+        cursor: text;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        transition: all 0.5s ease;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 2.5px;
+        margin-left: calc(50vw - calc(44vh + 45px));
+    }
+
+    input:focus {
+        width: 50vh;
+        margin-left: calc(50vw - calc(54vh + 45px));
+    }
+
+    input::placeholder {
+        transition: opacity 0.3s ease;
+    }
+
+    input:focus::placeholder {
+        opacity: 0;
+    }
+
+    select {
+        height: 7.5vh;
+        border-radius: 2vh;
+        font-size: 3vh;
+        background: var(--sidebar-bg);
+        margin-left: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin: 0px;
+    }
+
+    button {
+        text-align: center;
+        box-shadow: 0.5vh 0.5vh 1vh 0vh var(--shadow-color);
+        cursor: pointer;
+        height: 7.5vh;
+        background: var(--sidebar-bg);
+        color: var(--text);
+        margin-left: 0px;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+        outline: none;
+        border: none;
+        margin-right: 2.5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    button i {
+        font-size: 3vh;
+    }
 }
 
 i {
@@ -231,10 +290,6 @@ select {
     padding-left: 2vh;
     padding-right: 2vh;
     margin-top: 2vh;
-}
-
-button:hover {
-    opacity: 0.8;
 }
 
 .switch {
@@ -622,6 +677,7 @@ img.featured:hover {
 }
 
 @keyframes beat {
+
     0%,
     50%,
     100% {

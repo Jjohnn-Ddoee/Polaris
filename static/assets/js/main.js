@@ -35,20 +35,17 @@ window.addEventListener('beforeunload', (e) => {
     if (settingsStorage.get('prevent_close')) {
         e.preventDefault();
 
+        document.body.style.opacity = '1';
+
         return e;
     }
 });
-
-setInterval(() => {
-    if (sessionStorage.getItem('was_closing') === 'true') document.body.style.opacity = '1';
-    preventClose = settingsStorage.get('prevent_close');
-}, 1);
 
 /*await navigator.serviceWorker.register('/assets/js/offline.js', {
     scope: '/'
 });*/
 
-window.addEventListener('DOMContentLoaded', () => setTimeout(() => document.body.style.opacity = 1, 1000));
+window.addEventListener('load', () => setTimeout(() => document.body.style.opacity = 1, 1000));
 
 /**
  * @param {HTMLAnchorElement} hyperlink
@@ -107,13 +104,8 @@ const hyperlinkHandler = (hyperlink, e) => {
 document.querySelectorAll('a').forEach(hyperlink => hyperlink.addEventListener('click', (e) => hyperlinkHandler(hyperlink, e)));
 
 window.onhashchange = () => {
-    if (location.hash === '#settings') {
-        document.querySelector('.sidebar').classList.add('active');
-        umami.track('sidebar-open');
-    } else {
-        document.querySelector('.sidebar').classList.remove('active');
-        umami.track('sidebar-close');
-    }
+    if (location.hash === '#settings') document.querySelector('.sidebar').classList.add('active');
+    else document.querySelector('.sidebar').classList.remove('active');
 };
 
 if (window.self === window.top && location.pathname !== '/view') setTimeout(async () => {
@@ -122,7 +114,6 @@ if (window.self === window.top && location.pathname !== '/view') setTimeout(asyn
     if (location.pathname === '/games') Games.load();
     if (location.pathname === '/apps') Apps.load();
     if (location.pathname === '/search') Search.load();
-    if (location.pathname === '/') Search.load();
     if (location.pathname === '/cheats') Cheats.load();
 }, 500);
 
@@ -139,13 +130,11 @@ if (location.pathname === '/') {
     fetch('/api/games')
         .then(res => res.json())
         .then(games => {
-            const gameName = 'Run 3';
+            const gameName = 'Stickman Archero Fight';
             const game = games.all.filter(g => g.name === gameName)[0];
 
             document.querySelector('.featured').addEventListener('click', () => {
                 document.body.style.opacity = '0.7';
-
-                umami.track('game-' + game.name);
 
                 setTimeout(() => {
                     if (isValidURL(game.target)) createViewPage({
@@ -160,7 +149,7 @@ if (location.pathname === '/') {
                 }, 1000);
             });
 
-            document.querySelector('.featured').src = '/assets/img/wide/run3.png';
+            document.querySelector('.featured').src = '/assets/img/wide/stickman-archero-fight.png';
         }).catch(e => new PolarisError('Failed to load featured game.'));
 
     const logHeight = () => {
